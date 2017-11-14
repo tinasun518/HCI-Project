@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <title> Post-Workout Accessment </title>
+      
+      
   </head>
   <body>
       <div class="container">
@@ -27,11 +29,10 @@
                 <div class="container">
                     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
-                            <ul class = "nav nav-pills">
+                            <ul class = "nav nav-pills justify-content-md-between">
                                 <li class = "nav item"> <a class="nav-link" href="calender.html"> Calender </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statusandwellbeing.html"> Status and Wellbeing </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="workouts.html"> Workouts </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="foodanddiet.html"> Food and Diet </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statistics.html"> Statistics </a></li>
                                 <li class = "nav item"> <a class="nav-link active" href="goals.html"> Goals </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="profile.html"> User Profile </a></li>
@@ -43,6 +44,116 @@
                 </div>
 
             </div>
+          
+          <div class="row">
+              <div class="col-sm-12 justify-content-center">
+                   <div class="blog-header">
+                        <div class="container">
+                            <h1 class="blog-title">Goal</h1>
+                            <p class="lead blog-description">November 8, 2017</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          
+          <div class="row">
+              <div class="container">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="card">
+                      <div class="card-header" role="tab" id="headingOne">
+                          <h5 class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Set A New Goal</a>
+                          </h5>
+                      </div>
+                          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                              <div class="card-block">
+                                  <div class="row">
+
+                                      <div class="col-sm-4">
+                                          <div class="form-group row">
+                                                <h5 for="exampleSelect1" class="col-3 col-form-label">Type: </h5>
+                                                <div class="col-9">
+                                                    <select class="form-control" id="exampleSelect1">
+                                                      <option>Status</option>
+                                                      <option>Injury</option>
+                                                      <option>Workout</option>
+                                                      <option>Food &amp; Diet</option>
+                                                      <option>Other</option>
+                                                    </select>
+                                                </div>
+                                              </div>
+                                    </div>
+                                    
+                                      <div class="col-sm-8">
+                                          <div class="row">
+                                              <div class="form-group row">
+                                                  <h5 for="example-date-input" class="col-3 col-form-label">Length: From</h5>
+                                                  <div class="col-4">
+                                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                                  </div>
+                                                  <h5 for="example-date-input" class="col-1 col-form-label">to</h5>
+                                                  <div class="col-4">
+                                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                                  </div>
+                                                </div>
+                                        </div>
+                                          <div class="row">
+                                          
+                                              <div class="form-group row">
+                                                  <h5 for="example-text-input" class="col-5 col-form-label">Type your goal:</h5>
+                                                  <div class="col-5">
+                                                    <input class="form-control" type="text" value=" " id="example-text-input">
+                                                  </div>
+                                                  <div class="col-2">
+                                                  
+                                                    <button type="button" class="btn btn-secondary">Save</button>
+                                                  </div>
+                                                </div>
+                                          </div>
+                                      </div>           
+                                </div>
+                              </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" role="tab" id="headingTwo">
+                          <h5 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Goals in Progress (2)
+                            </a>
+                          </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="card-block">
+                              <div class="row">
+                                 <div class="col-sm-8"><p>Running 6 miles</p></div>
+                          
+                            <div class="col-sm-4"><button type="button" class="btn btn-secondary">Delete</button></div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="card-header" role="tab" id="headingThree">
+                          <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Past Goals (2)
+                        </a>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="card-block">
+                        <div class="row">
+                            <div class="col-sm-6"><p>Sit up 100 sets</p></div>
+                          
+                          <div class="col-sm-6"><button type="button" class="btn btn-secondary">Delete</button></div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
           
       </div>
 

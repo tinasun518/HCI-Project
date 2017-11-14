@@ -7,7 +7,24 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
       <title> Post-Workout Accessment </title>
+      
+      <style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
   </head>
   <body>
       <div class="container">
@@ -27,13 +44,11 @@
                 <div class="container">
                     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
-                            <ul class = "nav nav-pills">
+                            <ul class = "nav nav-pills justify-content-md-between">
                                 <li class = "nav item"> <a class="nav-link" href="calender.html"> Calender </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statusandwellbeing.html"> Status and Wellbeing </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="workouts.html"> Workouts </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="foodanddiet.html"> Food and Diet </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statistics.html"> Statistics </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="goals.html"> Goals </a></li>
                                 <li class = "nav item"> <a class="nav-link active" href="profile.html"> User Profile </a></li>
                                 
                                 
@@ -43,6 +58,107 @@
                 </div>
 
             </div>
+          
+          <div class="row text-center">
+            <img src="user.png" class="rounded mx-auto d-block" alt="profile" height="150" width="150">
+          </div>
+          
+          <div class="row">
+
+          <div class="col-sm-6">
+              <div class="form-group row">
+                    <h5 for="exampleSelect1" class="col-3 col-form-label">Gender: </h5>
+                    <div class="col-9">
+                        <select class="form-control" id="exampleSelect1">
+                          <option>Female</option>
+                          <option>Male</option>
+                          <option>Other</option>
+                        </select>
+                    </div>
+                  </div>
+            </div>
+        </div>
+          
+          
+          <div class="row">
+              <div class="col-sm-6">
+              <div class="form-group row">
+                  <h5 for="example-date-input" class="col-3 col-form-label">Birthday:</h5>
+                  <div class="col-9">
+                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+          
+          <div class="row">
+
+          <div class="col-sm-6">
+              <div class="form-group row">
+                    <h5 for="exampleSelect1" class="col-4 col-form-label">Occupation: </h5>
+                    <div class="col-8">
+                        <select class="form-control" id="exampleSelect1">
+                          <option>Student</option>
+                          <option>Teacher</option>
+                          <option>Other</option>
+                        </select>
+                    </div>
+                  </div>
+            </div>
+        </div>
+          
+          
+
+          <div class="row">
+
+          <div class="col-sm-6">
+              <div class="form-group row">
+                   <h5 for="example-text-input" class="col-3 col-form-label">Height:</h5>
+                      <div class="col-5">
+                        <input class="form-control" type="text" value="70" id="example-text-input">
+                      </div>
+                      <div class="col-4">
+                          <select class="form-control" id="exampleSelect1">
+                          <option>inches</option>
+                          <option>cm</option>
+                          </select>
+                        </div>
+                </div>
+            </div>
+        </div>
+          
+          
+          <div class="row">
+              <div class="col-sm-6">
+              <div class="form-group row">
+                   <h5 for="example-text-input" class="col-3 col-form-label">Weight:</h5>
+                      <div class="col-5">
+                        <input class="form-control" type="text" value="150" id="example-text-input">
+                      </div>
+                      <div class="col-4">
+                          <select class="form-control" id="exampleSelect1">
+                          <option>pounds</option>
+                          <option>kg</option>
+                          </select>
+                        </div>
+                 
+                  </div>
+                
+            </div>
+        </div>
+          
+          
+          <div class="row">
+                                          
+                <div class="container">
+                    
+                    <button type="button" class="btn btn-secondary">Save</button>
+                  
+                </div>
+          </div>
+          
+
           
       </div>
 

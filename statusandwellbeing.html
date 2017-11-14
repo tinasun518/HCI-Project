@@ -7,7 +7,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
       <title> Post-Workout Accessment </title>
+      
+      <style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
+      
   </head>
   <body>
       <div class="container">
@@ -27,22 +45,174 @@
                 <div class="container">
                     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
-                            <ul class = "nav nav-pills">
+                            <ul class = "nav nav-pills justify-content-md-between">
                                 <li class = "nav item"> <a class="nav-link" href="calender.html"> Calender </a></li>
                                 <li class = "nav item"> <a class="nav-link active" href="statusandwellbeing.html"> Status and Wellbeing </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="workouts.html"> Workouts </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="foodanddiet.html"> Food and Diet </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statistics.html"> Statistics </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="goals.html"> Goals </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="profile.html"> User Profile </a></li>
-                                
-                                
+                                                           
                             </ul>
 
                     </nav>
                 </div>
 
             </div>
+          
+          <br>
+          
+          <div class="row justify-content-center">
+              <div class="col-xs-12">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">Octber</a></li>
+                    <li class="page-item"><a class="page-link" href="#">31 st</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2017</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+          
+          <div class="row">
+              <div class="container">
+                <h5>How are you feeling today?</h5>
+              </div>
+          </div>
+          
+          <div class="row">
+              <div class="container">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Fine
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Okay
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Poor
+                  </label>
+                </div>
+            
+              </div>
+          
+          </div>
+          
+          <div class="row">
+            <div class="container">
+              <div class="form-group">
+                <label for="exampleTextarea">Comments:</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+              
+            </div>  
+          </div>
+          
+          <div class="row">
+              <div class="container">
+                <h5>How much pain are you in?</h5>
+              </div>
+          </div>
+          
+          <div class="row">
+               
+              <div class="container">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 0 (No pain at all)
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 1
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 3
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 4
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 5 (Moderate pain)
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 6
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 7
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 8
+                  </label>
+                </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 9
+                  </label>
+                </div>
+                  
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 10 (Extremely pain)
+                  </label>
+                </div>
+           
+              </div>
+              
+          
+          </div>
+          
+          <div class="row">
+            <div class="container">
+              <div class="form-group">
+                <label for="exampleTextarea">Comments:</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+              
+            </div>  
+          </div>
+          
+          
+          <div class="row">
+                                          
+                <div class="container">
+                    
+                    <button type="button" class="btn btn-secondary">Save</button>
+                  
+                </div>
+          </div>
+          
           
       </div>
 

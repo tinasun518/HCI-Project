@@ -7,7 +7,24 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      
       <title> Post-Workout Accessment </title>
+      
+      <style>
+
+	body {
+		margin: 40px 10px;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+</style>
   </head>
   <body>
      <div class="container">
@@ -27,15 +44,12 @@
                 <div class="container">
                     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
-                            <ul class = "nav nav-pills">
+                            <ul class = "nav nav-pills justify-content-md-between">
                                 <li class = "nav item"> <a class="nav-link" href="calender.html"> Calender </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statusandwellbeing.html"> Status and Wellbeing </a></li>
                                 <li class = "nav item"> <a class="nav-link active" href="workouts.html"> Workouts </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="foodanddiet.html"> Food and Diet </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statistics.html"> Statistics </a></li>
-                                <li class = "nav item"> <a class="nav-link" href="goals.html"> Goals </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="profile.html"> User Profile </a></li>
-                                
                                 
                             </ul>
 
@@ -43,8 +57,193 @@
                 </div>
 
             </div>
+         
+            <BR/>
           
-      </div>
+          <div class="row justify-content-center">
+              <div class="col-xs-12">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">Octber</a></li>
+                    <li class="page-item"><a class="page-link" href="#">31 st</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2017</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+         
+         <BR/>
+         
+         <div class="row">
+             <div class="container">
+                <label>What work out have you done today?</label>
+                 
+            </div>
+         </div>
+         
+        <BR/>
+         
+         <div class="row">
+         
+             <div class="col-sm-5 col-xs-12">
+                <div class="form-group">
+                <label for="exampleSelect1">Workout Type:</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>Flexibility Training</option>
+                  <option>Dynamic Strength-training</option>
+                  <option>Static Strength-training</option>
+                  <option>Aerobic Training</option>
+                  <option>Circuit Training</option>
+                </select>
+              </div>
+           </div>
+         </div>
+         
+         
+            <div class="row">
+         
+             <div class="col-sm-5 col-xs-12">
+                <div class="form-group">
+                <label for="exampleSelect1">Time Length:</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>10-20 min</option>
+                  <option>20-30 min</option>
+                  <option>30-40 min</option>
+                  <option>40-50 min</option>
+                  <option>50-60 min</option>
+                  <option>60-70 min</option>
+                  <option>70-80 min</option>
+                  <option>80-90 min</option>
+                  <option>90-100 min</option>
+                  <option>100-110 min</option>
+                  <option>110-120 min</option>
+                </select>
+              </div>
+           </div>
+         </div>
+         
+         
+            <div class="row">
+         
+             <div class="col-sm-5 col-xs-12">
+                <div class="form-group">
+                <label for="exampleSelect1">Average Heart Rate:</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>200 beats per minute</option>
+                  <option>190 beats per minute</option>
+                  <option>185 beats per minute</option>
+                  <option>180 beats per minute</option>
+                  <option>175 beats per minute</option>
+                  <option>170 beats per minute</option>
+                  <option>165 beats per minute</option>
+                  <option>160 beats per minute</option>
+                  <option>155 beats per minute</option>
+                  <option>150 beats per minute</option>
+                </select>
+              </div>
+           </div>
+         </div>
+         
+         
+         
+           <div class="row">
+         
+             <div class="col-sm-5 col-xs-12">
+                <div class="form-group">
+                <label for="exampleSelect1">Workout Intensity:</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>Strong</option>
+                  <option>Medium</option>
+                  <option>Mild</option>
+                </select>
+              </div>
+           </div>
+         </div>
+         
+    
+         <div class="row">
+         
+             <div class="col-sm-5 col-xs-12">
+                <div class="form-group">
+                <label for="exampleSelect1">Calories:</label>
+                <select class="form-control" id="exampleSelect1">
+                  <option>100-200 kcal</option>
+                  <option>200-300 kcal</option>
+                  <option>300-400 kcal</option>
+                  <option>400-500 kcal</option>
+                  <option>500-600 kcal</option>
+                  <option>600-700 kcal</option>
+                  <option>700-800 kcal</option>
+                  <option>800-900 kcal</option>
+                  <option>900-1000 kcal</option>
+                  <option>1000-1100 kcal</option>
+                  <option>1100-1200 kcal</option>
+                </select>
+              </div>
+           </div>
+         </div>
+         
+         
+         <div class="row">
+                                          
+                <div class="container">
+                    
+                    <button type="button" class="btn btn-secondary">Save</button>
+                  
+                </div>
+          </div>
+          
+         <BR/>
+         
+         <div class="row">
+            <label>Record:</label>
+         </div>
+         
+        <div class="row">
+                      <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Workout Type</th>
+                              <th scope="col">Time Length</th>
+                              <th scope="col">Average Heart Rate</th>
+                              <th scope="col">Intensity</th>
+                              <th scope="col">Calories</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                                <td>Static Strength-training</td>
+                                <td>20-30 min</td>
+                                <td>180 beats per minute</td>
+                                <td>Meidum</td>
+                                <td>300-400 kcal</td>
+                        
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                                <td>Flexibility Training</td>
+                                <td>20-30 min</td>
+                                <td>170 beats per minute</td>
+                                <td>Meidum</td>
+                                <td>200-300 kcal</td>
+                              
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                             
+                            </tr>
+                          </tbody>
+                      </table>
+
+                  </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      
+      
+           <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+           <style>  
+           li{  
+                cursor:pointer;  
+           }  
+           li:hover  
+           {  
+                background-color:#f9f9f9;  
+           }  
+           </style>   
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +20,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <title> Post-Workout Accessment </title>
+      
+      
+      
   </head>
   <body>
       <div class="container">
@@ -27,7 +42,7 @@
                 <div class="container">
                     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
 
-                            <ul class = "nav nav-pills">
+                            <ul class = "nav nav-pills justify-content-md-between">
                                 <li class = "nav item"> <a class="nav-link" href="calender.html"> Calender </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="statusandwellbeing.html"> Status and Wellbeing </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="workouts.html"> Workouts </a></li>
@@ -36,13 +51,115 @@
                                 <li class = "nav item"> <a class="nav-link" href="goals.html"> Goals </a></li>
                                 <li class = "nav item"> <a class="nav-link" href="profile.html"> User Profile </a></li>
                                 
-                                
                             </ul>
 
                     </nav>
                 </div>
 
             </div>
+          
+          <BR/>
+          <BR/>
+          
+          <div class="row justify-content-center">
+              <div class="col-xs-12">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">Octber</a></li>
+                    <li class="page-item"><a class="page-link" href="#">31 st</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2017</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            
+        </div>
+          
+           <BR/>
+           <BR/>
+          <div class="row">
+                      <div class="col-xm-6 col-xs-12">
+                            <div ng-app="myapp" ng-controller="usercontroller">  
+                                 <label>Enter Food Name</label>  
+                                 <input type="text" name="country" id="country" ng-model="country" ng-keyup="complete(country)" class="form-control" />  
+                                 <ul class="list-group" ng-model="hidethis" ng-hide="hidethis">  
+                                      <li class="list-group-item" ng-repeat="countrydata in filterCountry" ng-click="fillTextbox(countrydata)">{{countrydata}}</li>  
+                                 </ul>  
+                            </div> 
+                      </div>
+              </div>
+          
+          <div class="row">
+              
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Food</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Apple</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Meat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Rice</td>
+                    </tr>
+                  </tbody>
+             </table>
+          </div>
+        
+           <BR/>
+           <BR/>
+          
+          <div class="row">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Food</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Calories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Apple</td>
+                      <td>50 gram</td>
+                      <td>Lunch</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Beef Steak</td>
+                      <td>300 gram</td>
+                      <td>Dinner</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Noodles</td>
+                      <td>200 gram</td>
+                      <td>Dinner</td>
+                      <td>120</td>
+                    </tr>
+                  </tbody>
+              </table>
+              
+          </div>
           
       </div>
 
@@ -52,3 +169,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+
+<script>  
+ var app = angular.module("myapp",[]);  
+ app.controller("usercontroller", function($scope){  
+      $scope.countryList = [  
+           "Meat","Apple","Beef","Carrot","Rice","Noodles","Hot Dog","Eggs","Fried Rice","Grape","Jam","Lemon","Ice Cream","Kale","Donut","Orange","Peanut","Quinoa","Spahghetti","Tea"
+      ];  
+      $scope.complete = function(string){  
+           $scope.hidethis = false;  
+           var output = [];  
+           angular.forEach($scope.countryList, function(country){  
+                if(country.toLowerCase().indexOf(string.toLowerCase()) >= 0)  
+                {  
+                     output.push(country);  
+                }  
+           });  
+           $scope.filterCountry = output;  
+      }  
+      $scope.fillTextbox = function(string){  
+           $scope.country = string;  
+           $scope.hidethis = true;  
+      }  
+ });  
+ </script> 
