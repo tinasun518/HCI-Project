@@ -8,11 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <title> Post-Workout Accessment </title>
-<link href='../fullcalendar.min.css' rel='stylesheet' />
-<link href='../fullcalendar.print.min.css' rel='stylesheet' media='print' />
-<script src='../lib/moment.min.js'></script>
-<script src='../lib/jquery.min.js'></script>
-<script src='../fullcalendar.min.js'></script>
+<link href='../HiFiPrototype/fullcalendar.min.css' rel='stylesheet' />
+<link href='../HiFiPrototype/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='../HiFiPrototype/lib/moment.min.js'></script>
+<script src='../HiFiPrototype/lib/jquery.min.js'></script>
+<script src='../HiFiPrototype/fullcalendar.min.js'></script>
+<!--    <script src='jquery-3.2.1.min.js'></script>-->
 <script>
 
 	$(document).ready(function() {
@@ -25,58 +26,136 @@
 			editable: true,
 			events: [
 				{
-					title: 'Business Lunch',
-					start: '2017-11-03T13:00:00',
-					constraint: 'businessHours'
+					title: 'Overall: Fine',
+                    start:'2017-11-11T11:00:00',
+					color: '#54ff9f'
 				},
-				{
-					title: 'Meeting',
-					start: '2017-11-13T11:00:00',
-					constraint: 'availableForMeeting', // defined below
-					color: '#257e4a'
+                {
+					title: 'Pain: 2',
+                    start:'2017-11-11T11:00:00',
+					color: '#ffc0cb'
 				},
-				{
-					title: 'Conference',
-					start: '2017-11-18',
-					end: '2017-11-20'
+                {
+					title: 'Overall: Excellent',
+                    start:'2017-11-12T11:00:00',
+					color: '#54ff9f'
 				},
-				{
-					title: 'Party',
-					start: '2017-11-29T20:00:00'
-                    //url:'profile.html'
-                    
+                {
+					title: 'Pain: 0',
+                    start:'2017-11-12T11:00:00',
+					color: '#ffc0cb'
 				},
-
-				// areas where "Meeting" must be dropped
-				{
-					id: 'availableForMeeting',
-					start: '2017-11-11T10:00:00',
-					end: '2017-11-11T16:00:00',
-					rendering: 'background'
+                {
+					title: 'Overall: Okay',
+                    start:'2017-11-13T11:00:00',
+					color: '#54ff9f'
 				},
-				{
-					id: 'availableForMeeting',
-					start: '2017-11-13T10:00:00',
-					end: '2017-11-13T16:00:00',
-					rendering: 'background'
+                {
+					title: 'Pain: 5',
+                    start:'2017-11-13T11:00:00',
+					color: '#ffc0cb'
 				},
-
-				// red areas where no events can be dropped
-				{
-					start: '2017-11-24',
-					end: '2017-11-28',
-					overlap: false,
-					rendering: 'background',
-					color: '#ff9f89'
+                {
+					title: 'Overall: Fine',
+                    start:'2017-11-14T11:00:00',
+					color: '#54ff9f'
 				},
-				{
-					start: '2017-11-06',
-					end: '2017-11-08',
-					overlap: false,
+                {
+					title: 'Pain: 3',
+                    start:'2017-11-14T11:00:00',
+					color: '#ffc0cb'
+				},
+                {
+					title: 'Overall: Okay',
+                    start:'2017-11-15T11:00:00',
+					color: '#54ff9f'
+				},
+                {
+					title: 'Pain: 2',
+                    start:'2017-11-15T11:00:00',
+					color: '#ffc0cb'
+				},
+                {
+					title: 'Overall: Poor',
+                    start:'2017-11-16T11:00:00',
+					color: '#54ff9f'
+				},
+                {
+					title: 'Pain: 7',
+                    start:'2017-11-16T11:00:00',
+					color: '#ffc0cb'
+				},
+                {
+					title: 'Overall: Okay',
+                    start:'2017-11-17T11:00:00',					color: '#54ff9f'
+				},
+                {
+					title: 'Pain: 5',
+                    start:'2017-11-17T11:00:00',
+					color: '#ffc0cb'
+				},
+                {
+					title: 'Overall: Okay',
+                    start:'2017-11-18T11:00:00',					color: '#54ff9f'
+				},
+                {
+					title: 'Pain: 6',
+                    start:'2017-11-18T11:00:00',
+					color: '#ffc0cb'
+				},
+                {
+					title: 'Overall: Poor',
+                    start:'2017-11-19T11:00:00',					color: '#54ff9f'
+				},
+                {
+					title: 'Pain: 7',
+                    start:'2017-11-19T11:00:00',
+					color: '#ffc0cb'
+				},
+                {
+					start: '2017-11-16',
+					end: '2017-11-18',
+					overlap: true,
 					rendering: 'background',
 					color: '#ff9f89'
 				}
-			]
+                
+				// areas where "Meeting" must be dropped
+//				{
+//					id: 'availableForMeeting',
+//					start: '2017-11-11T10:00:00',
+//					end: '2017-11-11T16:00:00',
+//					rendering: 'background'
+//				},
+//				{
+//					id: 'availableForMeeting',
+//					start: '2017-11-13T10:00:00',
+//					end: '2017-11-13T16:00:00',
+//					rendering: 'background',
+//                    description: 'This is a cool event'
+//				},
+//
+//				// red areas where no events can be dropped
+//				{
+//					start: '2017-11-24',
+//					end: '2017-11-28',
+//					overlap: false,
+//					rendering: 'background',
+//					color: '#ff9f89'
+//				},
+//				{
+//					start: '2017-11-06',
+//					end: '2017-11-08',
+//					overlap: false,
+//					rendering: 'background',
+//					color: '#ff9f89'
+//				}
+			],
+//            eventRender: function(event, element) {
+//                element.qtip({
+//                    content: event.description
+//                });
+//            }
 		});
 		
 	});
